@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class VehicleInsuranceService {
-  private apiUrl = 'http://localhost:3002/api/vehicle/add'; // Replace with your API UR
+  private apiUrl = 'http://localhost:8081/addVehicle'; // Replace with your API UR
   constructor(private http: HttpClient) {}
 
   addInsurance(data: any): Observable<any> {
