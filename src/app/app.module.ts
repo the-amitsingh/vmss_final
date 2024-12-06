@@ -10,12 +10,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AddVehicleInsuranceComponent } from './add-vehicle-insurance/add-vehicle-insurance.component';
+import { UpdatepasswordComponent } from './updatepassword/updatepassword.component';
+import { UpdatepasswordService } from './services/updatepassword.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     InsuranceHistoryComponent,
-    AddVehicleInsuranceComponent // Declare components here
+    AddVehicleInsuranceComponent,
+    UpdatepasswordComponent // Declare components here
   ],
   imports: [
     BrowserModule,
@@ -24,7 +27,7 @@ import { AddVehicleInsuranceComponent } from './add-vehicle-insurance/add-vehicl
     ReactiveFormsModule,
     HttpClientModule // Import Angular modules here
   ],
-  providers: [UserService],
+  providers: [UserService, UpdatepasswordService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
